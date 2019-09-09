@@ -3,14 +3,7 @@ import { Component, ElementRef } from '@angular/core';
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
-  styles: [ `
-    ngui-in-view {
-      min-height: 300px;
-    }
-    .num-images { 
-      position: fixed; padding: 5px;
-      bottom: 0; right: 0; background: #333;color: #fff;
-    }` ]
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent  {
 
@@ -18,7 +11,7 @@ export class AppComponent  {
     return this.element.nativeElement.querySelectorAll('img').length;
   }
 
-  numArr = Array.from(Array(100), (_,x) => x);
+  numArr = Array.from({length: 1}, () => Math.floor(Math.random() * 999));
 
   constructor(public element: ElementRef) {}
 
