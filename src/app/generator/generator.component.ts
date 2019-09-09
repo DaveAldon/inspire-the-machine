@@ -12,6 +12,7 @@ export class GeneratorComponent  {
 
   reGenerate() {
     this.numArr = getId()
+    
   }
 
   numArr = getId()

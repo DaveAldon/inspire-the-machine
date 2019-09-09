@@ -1,9 +1,14 @@
 <app-header></app-header>
 <div *ngFor="let i of numArr">
-  <ngui-in-view>
-    <img *ngIf src="https://picsum.photos/id/{{i}}/400">
-  </ngui-in-view>
-  <button (click)="reGenerate()">Generate</button>
+  <div class="container">
+    <app-image-text></app-image-text>
+    <ngui-in-view>
+      <img *ngIf (error)="reGenerate()" src="https://picsum.photos/id/{{i}}/400">
+    </ngui-in-view>
+    <button class="gen-btn" (click)="reGenerate()">Generate</button>
+    
+  </div>
 </div>
+
 
 <!--https://picsum.photos/200-->

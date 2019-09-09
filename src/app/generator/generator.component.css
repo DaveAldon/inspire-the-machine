@@ -1,7 +1,29 @@
 ngui-in-view {
-  min-height: 300px;
 }
 .num-images { 
-  position: fixed; padding: 5px;
-  bottom: 0; right: 0; background: #333;color: #fff;
+  width: 100%;
+  bottom: 0; 
+  right: 0; 
+  background: #333;
+  color: #fff;
+}
+app-image-text {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  background-color: black;
+  color: white;
+}
+.container {
+  border-style: dashed;
+  position: absolute;
+  width: 75%;
+  min-width: 200px;
+}
+img {
+  width: 100%;
+}
+.gen-btn {
+  position: absolute;
+  top: 101%;
 }
